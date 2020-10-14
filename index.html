@@ -3,19 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+        <!-- <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"> -->
+
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
         <link type="text/css" rel="stylesheet" href="style.css">
 
         <title>Roll the dice</title>
     </head>
 
     <body>
-      <header>
-        <h1>Roll the Dice</h1>
-        <p>Rolling a 1 sets your current score back to 0 and gives the turn to the other player</p>
-        <p>Click hold to add your current score to your total</p>
-        <p>First player to score 100 points wins the game</p>
-      </header>
+      <div class="container">
+        <header>
+          <h1>Roll the Dice</h1>
+          <p>Rolling a 1 sets your current score back to 0 and gives the turn to the other player</p>
+          <p>Click hold to add your current score to your total</p>
+          <p>First player to score 100 points wins the game</p>
+        </header>
+
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
@@ -35,14 +41,14 @@
                 </div>
             </div>
 
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <button class="btn-new"><span class="iconify" data-icon="ion-ios-plus-outline" data-inline="false"></span>New game</button>
+            <button class="btn-roll"><span class="iconify" data-icon="ion:refresh" data-inline="false"></span>Roll dice</button>
+            <button class="btn-hold"><span class="iconify" data-icon="ion:arrow-down-circle-outline" data-inline="false"></span>Hold</button>
 
             <img src="dice-5.png" alt="Dice" class="dice">
         </div>
-        
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-        <script src="app.js"></script>
+      </div>
+
+      <script src="app.js"></script>
     </body>
 </html>
